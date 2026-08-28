@@ -1,7 +1,10 @@
 from flask import Flask, request, jsonify, session
 from flask_cors import CORS
-import util
 import database
+try:
+    from . import util
+except ImportError:
+    import util
 
 app = Flask(
     __name__,
