@@ -1,0 +1,189 @@
+.about-container {
+    width: 90%;
+    max-width: 1000px;
+
+    margin: 50px auto;
+}
+
+
+/* Hero */
+
+.about-hero {
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+.about-icon {
+    font-size: 55px;
+
+    margin-bottom: 15px;
+}
+
+.about-hero h1 {
+    font-size: 36px;
+
+    margin-bottom: 15px;
+}
+
+.about-hero > p:last-child {
+    max-width: 700px;
+
+    margin: auto;
+
+    color: #666;
+
+    line-height: 1.6;
+}
+
+
+/* Cards */
+
+.about-card {
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 16px;
+
+    margin-bottom: 25px;
+
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.07);
+}
+
+.about-card h2 {
+    margin-bottom: 25px;
+}
+
+
+/* Steps */
+
+.steps {
+    display: grid;
+
+    gap: 20px;
+}
+
+.step {
+    display: flex;
+
+    gap: 18px;
+
+    align-items: flex-start;
+
+    padding: 15px;
+
+    background: #f5f7fb;
+
+    border-radius: 10px;
+}
+
+.step-number {
+    min-width: 35px;
+    height: 35px;
+
+    background: #222;
+
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    font-weight: bold;
+}
+
+.step h3 {
+    margin-bottom: 5px;
+}
+
+.step p {
+    color: #777;
+
+    line-height: 1.5;
+}
+
+
+/* Technologies */
+
+.technology-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+.technology {
+    padding: 20px;
+
+    background: #f5f7fb;
+
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+.technology strong {
+    display: block;
+
+    margin-bottom: 5px;
+}
+
+.technology span {
+    color: #777;
+
+    font-size: 13px;
+}
+
+
+/* Features */
+
+.feature-list {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+}
+
+.feature-list p {
+    background: #f5f7fb;
+
+    padding: 15px;
+
+    border-radius: 8px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .about-container {
+        width: 94%;
+
+        margin: 30px auto;
+    }
+
+    .about-card {
+        padding: 25px;
+    }
+
+    .about-hero h1 {
+        font-size: 28px;
+    }
+
+    .technology-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .feature-list {
+        grid-template-columns: 1fr;
+    }
+}

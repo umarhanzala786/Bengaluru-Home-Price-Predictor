@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>History | Bengaluru Home Predictor</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="history.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+
+        <div class="brand">
+            🏠 Bengaluru Predictor
+        </div>
+
+        <div class="nav-links">
+
+            <a href="dashboard.html">Dashboard</a>
+
+            <a href="history.html" class="active">
+                History
+            </a>
+
+            <a href="profile.html">
+                Profile
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <button onclick="logout()" class="logout-btn">
+                Logout
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Main -->
+    <main class="history-container">
+
+        <div class="history-header">
+
+            <div>
+                <p class="small-text">
+                    YOUR ACTIVITY
+                </p>
+
+                <h1>
+                    Prediction History
+                </h1>
+
+                <p>
+                    View your previous property price predictions.
+                </p>
+            </div>
+
+        </div>
+
+
+        <!-- History Card -->
+        <section class="history-card">
+
+            <div id="historyContent">
+
+                <div class="loading">
+                    Loading prediction history...
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="history.js"></script>
+
+</body>
+
+</html>

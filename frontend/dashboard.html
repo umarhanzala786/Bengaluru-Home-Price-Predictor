@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | Bengaluru Home Predictor</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+
+        <div class="brand">
+            🏠 Bengaluru Predictor
+        </div>
+
+        <div class="nav-links">
+            <a href="dashboard.html" class="active">Dashboard</a>
+            <a href="history.html">History</a>
+            <a href="profile.html">Profile</a>
+            <a href="about.html">About</a>
+
+            <button onclick="logout()" class="logout-btn">
+                Logout
+            </button>
+        </div>
+
+    </nav>
+
+
+    <!-- Main Content -->
+    <main class="dashboard-container">
+
+        <section class="welcome-section">
+
+            <div>
+                <p class="small-text">WELCOME BACK</p>
+
+                <h1>
+                    Hello, <span id="userName">User</span> 👋
+                </h1>
+
+                <p>
+                    Predict the estimated price of a property
+                    in Bengaluru using our Machine Learning model.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- Prediction Card -->
+        <section class="prediction-card">
+
+            <div class="card-header">
+
+                <h2>🏠 Home Price Prediction</h2>
+
+                <p>
+                    Enter property details to get an estimated price.
+                </p>
+
+            </div>
+
+
+            <div class="form-grid">
+
+                <!-- Area -->
+                <div class="input-group">
+
+                    <label for="uiSqft">
+                        Area (Square Feet)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="uiSqft"
+                        value="1000"
+                        min="100"
+                        placeholder="Example: 1200"
+                    >
+
+                </div>
+
+
+                <!-- Location -->
+                <div class="input-group">
+
+                    <label for="uiLocations">
+                        Location
+                    </label>
+
+                    <select id="uiLocations">
+
+                        <option value="" disabled selected>
+                            Choose a Location
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <!-- BHK -->
+            <div class="input-group">
+
+                <label>BHK</label>
+
+                <div class="option-group">
+
+                    <input type="radio" id="bhk1" name="uiBHK" value="1">
+                    <label for="bhk1">1</label>
+
+                    <input type="radio" id="bhk2" name="uiBHK" value="2" checked>
+                    <label for="bhk2">2</label>
+
+                    <input type="radio" id="bhk3" name="uiBHK" value="3">
+                    <label for="bhk3">3</label>
+
+                    <input type="radio" id="bhk4" name="uiBHK" value="4">
+                    <label for="bhk4">4</label>
+
+                    <input type="radio" id="bhk5" name="uiBHK" value="5">
+                    <label for="bhk5">5</label>
+
+                </div>
+
+            </div>
+
+
+            <!-- Bathrooms -->
+            <div class="input-group">
+
+                <label>Bathrooms</label>
+
+                <div class="option-group">
+
+                    <input type="radio" id="bath1" name="uiBathrooms" value="1">
+                    <label for="bath1">1</label>
+
+                    <input type="radio" id="bath2" name="uiBathrooms" value="2" checked>
+                    <label for="bath2">2</label>
+
+                    <input type="radio" id="bath3" name="uiBathrooms" value="3">
+                    <label for="bath3">3</label>
+
+                    <input type="radio" id="bath4" name="uiBathrooms" value="4">
+                    <label for="bath4">4</label>
+
+                    <input type="radio" id="bath5" name="uiBathrooms" value="5">
+                    <label for="bath5">5</label>
+
+                </div>
+
+            </div>
+
+
+            <button
+                class="predict-btn"
+                onclick="onClickedEstimatePrice()">
+
+                Estimate Property Price
+
+            </button>
+
+
+            <!-- Result -->
+            <div id="uiEstimatedPrice" class="result-card">
+
+                <span>Estimated Price</span>
+
+                <h2>-- Lakh</h2>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="dashboard.js"></script>
+
+</body>
+
+</html>

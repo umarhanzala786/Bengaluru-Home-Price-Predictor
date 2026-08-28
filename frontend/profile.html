@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profile | Bengaluru Home Predictor</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="profile.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+
+        <div class="brand">
+            🏠 Bengaluru Predictor
+        </div>
+
+        <div class="nav-links">
+
+            <a href="dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="history.html">
+                History
+            </a>
+
+            <a href="profile.html" class="active">
+                Profile
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <button onclick="logout()" class="logout-btn">
+                Logout
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Main -->
+    <main class="profile-container">
+
+        <div class="profile-header">
+
+            <p class="small-text">
+                ACCOUNT
+            </p>
+
+            <h1>
+                My Profile
+            </h1>
+
+            <p>
+                Manage and view your account information.
+            </p>
+
+        </div>
+
+
+        <!-- Profile Card -->
+        <section class="profile-card">
+
+            <div class="profile-avatar">
+                👤
+            </div>
+
+            <div class="profile-info">
+
+                <div class="profile-field">
+
+                    <span class="field-label">
+                        Full Name
+                    </span>
+
+                    <span
+                        id="profileName"
+                        class="field-value">
+                        Loading...
+                    </span>
+
+                </div>
+
+
+                <div class="profile-field">
+
+                    <span class="field-label">
+                        Email Address
+                    </span>
+
+                    <span
+                        id="profileEmail"
+                        class="field-value">
+                        Loading...
+                    </span>
+
+                </div>
+
+
+                <div class="profile-field">
+
+                    <span class="field-label">
+                        Account Status
+                    </span>
+
+                    <span class="status">
+                        ● Active
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Quick Actions -->
+        <section class="quick-actions">
+
+            <h2>
+                Quick Actions
+            </h2>
+
+            <div class="action-grid">
+
+                <a
+                    href="dashboard.html"
+                    class="action-card">
+
+                    <span>🏠</span>
+
+                    <div>
+                        <h3>New Prediction</h3>
+
+                        <p>
+                            Predict a property price
+                        </p>
+                    </div>
+
+                </a>
+
+
+                <a
+                    href="history.html"
+                    class="action-card">
+
+                    <span>📊</span>
+
+                    <div>
+                        <h3>View History</h3>
+
+                        <p>
+                            See your previous predictions
+                        </p>
+                    </div>
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="profile.js"></script>
+
+</body>
+
+</html>

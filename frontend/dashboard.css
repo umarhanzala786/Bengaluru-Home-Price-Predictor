@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background: #f5f7fb;
+    color: #222;
+}
+
+
+/* Navbar */
+
+.navbar {
+    height: 70px;
+    background: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.brand {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #666;
+    font-size: 15px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #111;
+    font-weight: bold;
+}
+
+.logout-btn {
+    border: none;
+    background: #222;
+    color: white;
+
+    padding: 9px 17px;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    opacity: 0.85;
+}
+
+
+/* Main */
+
+.dashboard-container {
+    width: 90%;
+    max-width: 1000px;
+
+    margin: 50px auto;
+}
+
+
+/* Welcome */
+
+.welcome-section {
+    margin-bottom: 30px;
+}
+
+.small-text {
+    font-size: 12px;
+    font-weight: bold;
+    color: #777;
+    letter-spacing: 1px;
+
+    margin-bottom: 8px;
+}
+
+.welcome-section h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.welcome-section p {
+    color: #666;
+}
+
+
+/* Prediction Card */
+
+.prediction-card {
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.card-header {
+    margin-bottom: 30px;
+}
+
+.card-header h2 {
+    margin-bottom: 8px;
+}
+
+.card-header p {
+    color: #777;
+}
+
+
+/* Form */
+
+.form-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
+}
+
+.input-group {
+    margin-bottom: 25px;
+}
+
+.input-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: bold;
+
+    font-size: 14px;
+}
+
+.input-group input[type="number"],
+.input-group select {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    background: white;
+
+    outline: none;
+}
+
+.input-group input[type="number"]:focus,
+.input-group select:focus {
+    border-color: #555;
+}
+
+
+/* Radio buttons */
+
+.option-group {
+    display: flex;
+
+    gap: 8px;
+}
+
+.option-group input {
+    display: none;
+}
+
+.option-group label {
+    cursor: pointer;
+
+    border: 1px solid #ddd;
+
+    padding: 10px 18px;
+
+    border-radius: 7px;
+
+    margin: 0;
+
+    font-weight: normal;
+}
+
+.option-group input:checked + label {
+    background: #222;
+    color: white;
+    border-color: #222;
+}
+
+
+/* Predict button */
+
+.predict-btn {
+    width: 100%;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #222;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.predict-btn:hover {
+    opacity: 0.85;
+}
+
+
+/* Result */
+
+.result-card {
+    margin-top: 25px;
+
+    padding: 25px;
+
+    background: #f5f7fb;
+
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+.result-card span {
+    color: #777;
+
+    font-size: 14px;
+}
+
+.result-card h2 {
+    margin-top: 8px;
+
+    font-size: 30px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .nav-links a {
+        display: none;
+    }
+
+    .dashboard-container {
+        width: 92%;
+        margin: 30px auto;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .prediction-card {
+        padding: 25px;
+    }
+
+}

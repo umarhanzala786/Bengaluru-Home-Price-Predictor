@@ -1,9 +1,101 @@
-model trained with using linear regretion at about 95% of accuracy.
+# 🏠 Bengaluru Home Price Predictor
 
-#Project UI
+A beginner-friendly Machine Learning web application that predicts
+the estimated price of a residential property in Bengaluru based on
+area, BHK, bathrooms, and location.
 
-![house_price_prediction_UI](https://github.com/preshitroje/bengulu-house-price-prediction-ML/assets/105905070/05839597-6666-4317-87ba-a288928ce1f7)
+The project combines a Machine Learning model with a Flask backend,
+SQLite database, and a responsive HTML/CSS/JavaScript frontend.
 
-#steps to run 
-1. run flask server
-2. run index.html from frontend
+---
+
+## 🚀 Features
+
+- 🏠 Bengaluru home price prediction
+- 🤖 Machine Learning based price estimation
+- 📍 Multiple Bengaluru locations
+- 🔐 User registration and login
+- 🔒 Session-based authentication
+- 🔑 Password hashing
+- 📊 Personal prediction history
+- 👤 User profile
+- 📖 About page
+- 📱 Responsive frontend
+- ⚡ REST API based backend
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+- HTML5
+- CSS3
+- JavaScript
+
+### Backend
+
+- Python
+- Flask
+- Flask-CORS
+
+### Machine Learning
+
+- NumPy
+- Scikit-learn
+- Linear Regression
+
+### Database
+
+- SQLite
+
+---
+
+## 📁 Project Structure
+
+```text
+bengaluru-home-price-predictor/
+│
+├── frontend/
+│   ├── home.html
+│   ├── home.css
+│   ├── home.js
+│   │
+│   ├── index.html
+│   ├── index.css
+│   │
+│   ├── signup.html
+│   │
+│   ├── dashboard.html
+│   ├── dashboard.css
+│   ├── dashboard.js
+│   │
+│   ├── history.html
+│   ├── history.css
+│   ├── history.js
+│   │
+│   ├── profile.html
+│   ├── profile.css
+│   ├── profile.js
+│   │
+│   ├── about.html
+│   ├── about.css
+│   ├── about.js
+│   │
+│   ├── bg.svg
+│   │
+│   └── js/
+│       ├── auth.js
+│       └── signup.js
+│
+├── model/
+│
+├── server/
+│   ├── artifacts/
+│   ├── database.py
+│   ├── requirement.txt
+│   ├── server.py
+│   └── util.py
+│
+├── .gitignore
+└── README.md
