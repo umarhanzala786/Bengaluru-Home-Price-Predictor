@@ -17,6 +17,8 @@ app.secret_key = "bengaluru-house-price-secret-key"
 
 # Allow frontend requests
 CORS(app)
+database.init_db()
+util.load_saved_artifacts()
 
 @app.route("/")
 def home():
